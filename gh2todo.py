@@ -37,7 +37,7 @@ todoist_project_name = 'githubissues'
 
 
 ## Get Open Issues
-issues = get_from('https://api.github.com/user/issues')
+issues = get_from('https://api.github.com/issues')
 
 for issue in issues:
     print '{0} - {1} - {2}'.format(issue['repository']['name'], issue['number'], issue['title'])
